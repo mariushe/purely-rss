@@ -1,0 +1,7 @@
+{
+  "name": "purely-ghost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "marius herring <mariusherring@gmail.com>",
+  "license": "MIT"
+}
