@@ -6,8 +6,8 @@ const Cards = ({posts}) => {
 
     const style = {
         display: 'flex',
-        flexDirection: 'row',
-        flexGrow: '1'
+        flexFlow: 'row wrap',
+        justifyContent: 'space-around',
     };
 
     const CardsToDisplay = posts.slice(0, 3).map(post => {
