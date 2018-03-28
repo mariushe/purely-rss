@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Card = () => {
+const Card = ({post}) => {
 
     const cardStyle = {
         boxShadow: '0 1px 7px rgba(0,0,0,.05)',
@@ -14,14 +14,11 @@ const Card = () => {
             <div>
             </div>
             <div>
-                <div>
-                    Java
-                </div>
-                <div>
-                    Java 9: filtering and flatmapping - Two new collectors for your Streams
-                </div>
+                <p>
+                    {post.title}
+                </p>
+                <p>by {post.creator}</p>
             </div>
-            Card
         </div>
     );
 };

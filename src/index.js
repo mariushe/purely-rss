@@ -4,23 +4,35 @@ import RSSParser from 'rss-parser';
 
 class PurelyGhost extends React.Component {
 
-    render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoading: true,
+        };
+    }
 
-        const { url } = this.props;
+    addPosts(posts) {
+        this.setState({
+            isLoading: false,
+            posts: posts,
+        });
+    }
 
+    componentDidMount() {
+        const {url} = this.props;
         const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
         let parser = new RSSParser();
-        parser.parseURL(CORS_PROXY + url + "/rss", function (err, feed) {
-            console.log(feed.title);
-            feed.items.forEach(function (entry) {
-                console.log(entry);
-            })
+        parser.parseURL(CORS_PROXY + url + "/rss", (err, feed) => {
+            this.addPosts(feed.items);
         });
+    }
 
+    render() {
         return (
             <div>
-                <Cards/>
+                {this.state.isLoading && <div>wait</div>}
+                {!this.state.isLoading && <Cards posts={this.state.posts}/>}
             </div>
         );
     }
