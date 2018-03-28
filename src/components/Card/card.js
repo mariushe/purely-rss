@@ -1,4 +1,5 @@
 import React from 'react';
+import extractImage from '../../utils/extractImage';
 
 
 const Card = ({post}) => {
@@ -8,6 +9,8 @@ const Card = ({post}) => {
         flexBasis: 'auto',
         width: '300px'
 };
+
+    console.log(extractImage(post.content));
 
     return (
         <div style={cardStyle}>
