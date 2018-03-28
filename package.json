@@ -2,7 +2,7 @@
   "name": "purely-ghost",
   "version": "0.0.1",
   "main": "build/index.js",
-  "author": "marius herring <mariusherring@gmail.com>",
+  "author": "Marius Herring <mariusherring@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "webpack"
