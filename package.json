@@ -1,6 +1,6 @@
 {
   "name": "purely-ghost",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "author": "Marius Herring <mariusherring@gmail.com>",
   "license": "MIT",
