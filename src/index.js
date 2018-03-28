@@ -31,7 +31,6 @@ class PurelyGhost extends React.Component {
     render() {
         return (
             <div>
-                {this.state.isLoading && <div>wait</div>}
                 {!this.state.isLoading && <Cards posts={this.state.posts}/>}
             </div>
         );
