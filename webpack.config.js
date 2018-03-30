@@ -10,8 +10,8 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                include: path.resolve(__dirname, 'src'),
-                exclude: /(node_modules|bower_components|lib)/,
+                include: [path.resolve(__dirname, 'src'),
+                    path.resolve(__dirname, 'node_modules/rss-parser')],
                 use: {
                     loader: 'babel-loader',
                 }

@@ -1,10 +1,11 @@
 {
   "presets": [[
-    "env",
+    "es2015",
     {
       "targets": {
         "uglify": true
-      }
+      },
+      "forceAllTransforms": true
     }
   ]],
   "plugins": [
