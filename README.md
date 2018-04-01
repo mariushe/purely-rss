@@ -4,4 +4,4 @@
 
 > A clean React component that displays a ghost blogs latest posts
 
-[Demo](www.mariusherring.netlify.com) 
+[Demo](https://mariusherring.netlify.com) 
