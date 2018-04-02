@@ -1,12 +1,12 @@
 {
-  "name": "purely-ghost",
-  "version": "0.0.7",
+  "name": "purely-rss",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "author": "Marius Herring <mariusherring@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mariushe/purely-ghost"
+    "url": "https://github.com/mariushe/purely-rss"
   },
   "scripts": {
     "build": "webpack",
