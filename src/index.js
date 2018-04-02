@@ -2,7 +2,7 @@ import React from 'react';
 import Cards from './components/Card/cards';
 import RSSParser from 'rss-parser';
 
-class PurelyGhost extends React.Component {
+class PurelyRSS extends React.Component {
 
     constructor(props) {
         super(props);
@@ -29,12 +29,15 @@ class PurelyGhost extends React.Component {
     }
 
     render() {
+
+        const {nrOfPosts = 3} = this.props;
+
         return (
             <div>
-                {!this.state.isLoading && <Cards posts={this.state.posts}/>}
+                {!this.state.isLoading && <Cards posts={this.state.posts} nrOfPosts={nrOfPosts}/>}
             </div>
         );
     }
 };
 
-export default PurelyGhost;
+export default PurelyRSS;

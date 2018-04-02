@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 
 
-const Cards = ({posts}) => {
+const Cards = ({posts, nrOfPosts}) => {
 
     const style = {
         display: 'flex',
@@ -10,7 +10,7 @@ const Cards = ({posts}) => {
         justifyContent: 'space-around',
     };
 
-    const CardsToDisplay = posts.slice(0, 3).map(post => {
+    const CardsToDisplay = posts.slice(0, nrOfPosts).map(post => {
         return <Card key={post.guid} post={post}/>;
     });
 

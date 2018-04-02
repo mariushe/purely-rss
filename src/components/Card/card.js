@@ -42,9 +42,8 @@ const Card = ({post}) => {
     };
 
     return (
-
-            <div style={card}>
-                <a href={post.link}>
+        <div style={card}>
+            <a href={post.link}>
                 <div style={image}>
                 </div>
                 <div style={author}>
@@ -53,8 +52,8 @@ const Card = ({post}) => {
                 <div style={title}>
                     {post.title}
                 </div>
-        </a>
-            </div>
+            </a>
+        </div>
     );
 };
 
