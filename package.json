@@ -1,8 +1,10 @@
 {
   "name": "purely-rss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "author": "Marius Herring <mariusherring@gmail.com>",
+  "description": "A clean React component that displays the latest posts based on the RSS feed",
+  "keywords": ["react", "javascript", "rss"],
   "license": "MIT",
   "repository": {
     "type": "git",
