@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test that Card renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "background": "#fff",
+      "border": "1px solid rgba(0,0,0,.04)!important",
+      "borderRadius": "4px",
+      "boxShadow": "0 1px 7px rgba(0,0,0,.05)",
+      "flexBasis": "300px",
+      "marginBottom": "20px",
+    }
+  }
+>
+  <a
+    href="http://www.someurl.com"
+  >
+    <div
+      style={
+        Object {
+          "backgroundImage": "url(www.someaddr.com)",
+          "backgroundSize": "100%",
+          "borderTopLeftRadius": "4px",
+          "borderTopRightRadius": "4px",
+          "height": "150px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "color": "#2b313e",
+          "fontSize": "15px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+          "marginTop": "20px",
+          "opacity": "0.9",
+        }
+      }
+    >
+      by 
+      The Author
+    </div>
+    <div
+      style={
+        Object {
+          "color": "#2b313e",
+          "fontSize": "21px",
+          "marginBottom": "20px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+          "marginTop": "10px",
+        }
+      }
+    >
+      The title
+    </div>
+  </a>
+</div>
+`;
