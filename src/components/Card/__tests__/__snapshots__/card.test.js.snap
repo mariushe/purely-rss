@@ -15,6 +15,11 @@ exports[`Test that Card renders correctly 1`] = `
 >
   <a
     href="http://www.someurl.com"
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }
   >
     <div
       style={
