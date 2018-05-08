@@ -41,9 +41,13 @@ const Card = ({post}) => {
 
     };
 
+    const link = {
+        textDecoration: 'none'
+    };
+
     return (
         <div style={card}>
-            <a href={post.link}>
+            <a style={link} href={post.link}>
                 <div style={image}>
                 </div>
                 <div style={author}>
